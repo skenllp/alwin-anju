@@ -49,7 +49,7 @@
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 
-  <meta name="theme-color" content="#4d1420" />
+  <meta name="theme-color" content="#211e22" />
 </head>
 
 <body class="gate-active">
@@ -57,7 +57,7 @@
   <!-- ===================== OPENING GATE ===================== -->
   <div id="gate">
     <div class="gate-image">
-      <img src="assets/images/gate.jpeg" alt="Alwin Joseph and Anju Paul" />
+      <img src="assets/images/gate-couple.jpg" alt="Alwin Joseph and Anju Paul" />
     </div>
     <div class="gate-fade"></div>
     <div class="gate-vignette"></div>
@@ -102,13 +102,14 @@
     <a href="#opening"   class="side-nav__dot" data-label="Blessings"></a>
     <a href="#couple"    class="side-nav__dot" data-label="Couple"></a>
     <a href="#events"    class="side-nav__dot" data-label="Celebrations"></a>
+    <a href="#gallery"   class="side-nav__dot" data-label="Gallery"></a>
   </nav>
 
   <!-- ===================== HERO / REVEAL ===================== -->
   <section id="hero" class="hero is-open">
 
     <div class="hero__backdrop">
-      <img src="assets/images/hero.jpeg" alt="Alwin Joseph and Anju Paul" class="hero__bg-photo" />
+      <img src="assets/images/bg.jpg" alt="Alwin Joseph and Anju Paul" class="hero__bg-photo" />
       <div class="hero__gradient"></div>
     </div>
 
@@ -156,7 +157,7 @@
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav-logo shimmer-gold">S &amp; A</div>
+    <div class="nav-logo shimmer-gold">A &amp; A</div>
   </nav>
 
   <!-- ===== COUNTDOWN ===== -->
@@ -431,6 +432,38 @@
     </div>
   </section>
 
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery">
+    <div class="gallery-content">
+      <span class="section-eyebrow" data-aos="fade-up">Our Moments</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Gallery</h2>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="200">
+        <span class="ornament-line"></span>
+        <span class="ornament-flower">&#10015;</span>
+        <span class="ornament-line right"></span>
+      </div>
+
+      <div class="gallery-grid gallery-mosaic">
+        <button type="button" class="gallery-item gm-a" data-full="assets/images/gallery/car-wall.jpg" data-aos="fade-up" aria-label="Open photo: Alwin and Anju with the orange Challenger">
+          <img src="assets/images/gallery/car-wall.jpg" alt="Alwin and Anju with the orange Challenger" loading="lazy" />
+        </button>
+        <button type="button" class="gallery-item gm-b" data-full="assets/images/gallery/closeup.jpg" data-aos="fade-up" aria-label="Open photo: Alwin and Anju, close portrait">
+          <img src="assets/images/gallery/closeup.jpg" alt="Alwin and Anju, close portrait" loading="lazy" />
+        </button>
+        <button type="button" class="gallery-item gm-c" data-full="assets/images/gallery/car-door.jpg" data-aos="fade-up" aria-label="Open photo: Alwin and Anju leaning on the car">
+          <img src="assets/images/gallery/car-door.jpg" alt="Alwin and Anju leaning on the car" loading="lazy" />
+        </button>
+        <button type="button" class="gallery-item gm-d" data-full="assets/images/gallery/tree.jpg" data-aos="fade-up" aria-label="Open photo: Alwin and Anju under the tree">
+          <img src="assets/images/gallery/tree.jpg" alt="Alwin and Anju under the tree" loading="lazy" />
+        </button>
+        <button type="button" class="gallery-item gm-e" data-full="assets/images/gallery/mirror.jpg" data-aos="fade-up" aria-label="Open photo: Alwin and Anju seen through the car window">
+          <img src="assets/images/gallery/mirror.jpg" alt="Alwin and Anju seen through the car window" loading="lazy" />
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== QUOTE SECTION ===== -->
   <section id="quote-section">
     <div class="quote-bg" aria-hidden="true"></div>
@@ -494,6 +527,14 @@
       </p>
     </div>
   </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+    <img class="lightbox-img" id="lightboxImg" alt="" />
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+  </div>
 
   <!-- ===== SCRIPTS ===== -->
   <!-- GSAP for parallax -->

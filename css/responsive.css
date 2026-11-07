@@ -85,6 +85,11 @@
 
   /* Music toggle: shift left slightly so it doesn't overlap scroll cue */
   .music-toggle { bottom: 20px; right: 16px; width: 46px; height: 46px; }
+
+  /* Gate image positioning - center better on mobile */
+  .gate-image img {
+    object-position: 45% top;
+  }
 }
 
 /* ===== MOBILE: 480px ===== */

@@ -59,7 +59,7 @@
 
 .hover-lift:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 60px rgba(143, 168, 194, 0.18);
+  box-shadow: 0 24px 60px rgba(232, 115, 58, 0.18);
 }
 
 /* ===== FLOAT ANIMATIONS ===== */
@@ -79,8 +79,8 @@
 .glow-gold { animation: glowPulse 2s ease-in-out infinite; }
 
 @keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(201, 123, 138, 0.28); }
-  50%       { box-shadow: 0 0 40px rgba(143, 168, 194, 0.45); }
+  0%, 100% { box-shadow: 0 0 20px rgba(232, 115, 58, 0.3); }
+  50%       { box-shadow: 0 0 40px rgba(201, 169, 120, 0.45); }
 }
 
 /* ===== COUNTDOWN FLIP ===== */
