@@ -1414,6 +1414,9 @@ body.gate-active {
   position: absolute;
   inset: 0;
   overflow: hidden;
+  background-color: #1d1a1f;
+  /* Fallback background in case image doesn't load */
+  background: linear-gradient(135deg, #2a272c 0%, #1d1a1f 100%);
 }
 
 .gate-image img {
@@ -1424,6 +1427,13 @@ body.gate-active {
   filter: brightness(0.88);
   transform: scale(1.08);
   transition: transform 6s cubic-bezier(0.19, 1, 0.22, 1), filter 1.2s ease;
+  /* iPhone compatibility fixes */
+  -webkit-transform: scale(1.08);
+  -webkit-filter: brightness(0.88);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0) scale(1.08);
+  -webkit-transform: translateZ(0) scale(1.08);
 }
 
 /* Slow ambient zoom while gate is open */
