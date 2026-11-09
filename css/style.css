@@ -2046,31 +2046,6 @@ footer {
 #countdown .ornament-line { background: linear-gradient(90deg, transparent, var(--gold-200)) !important; }
 #countdown .ornament-line.right { background: linear-gradient(90deg, var(--gold-200), transparent) !important; }
 
-/* ================= GATE — couple portrait (B&W) ================= */
-.gate-image::before {
-  display: block; content: ""; position: absolute; inset: -40px;
-  background: url('../assets/images/gate-couple.jpg') 95% center / cover no-repeat;
-  filter: blur(30px) brightness(0.7); opacity: 0.9;
-}
-.gate-image img {
-  object-fit: cover; object-position: 95% 12%;
-  filter: brightness(0.95) contrast(1.05);
-}
-.gate-fade {
-  background: linear-gradient(to bottom,
-    rgba(20,18,22,0.25) 0%, rgba(20,18,22,0.05) 30%,
-    rgba(20,18,22,0.55) 58%, rgba(20,18,22,0.92) 100%);
-}
-.gate-content { justify-content: center; padding: 40px 24px; }
-.gate-tap { margin-top: 0; }
-@media (min-width: 769px) {
-  .gate-image img { object-fit: contain; object-position: 90% top; }
-}
-@media (max-width: 768px) {
-  .gate-image::before { display: none; }
-  .gate-image img { object-position: 100% top; }
-}
-
 /* ================= GALLERY MOSAIC ================= */
 #gallery { background: linear-gradient(180deg, #2b282c 0%, #1b191d 100%); }
 .gallery-mosaic {
